@@ -1,0 +1,16 @@
+table{
+  width: 100%;
+} 
+table, td, tr, th{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+td{
+  text-align: center;
+}
+th:hover{
+  background-color: gray;
+}
+td:nth-child(even):hover {
+  background-color: green;
+}

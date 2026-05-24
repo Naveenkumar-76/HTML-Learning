@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        body {
+            background-image: url('/media/agribackground.webp');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML images</h1>
+    <h3>3. Background Image </h3>
+    <p>we can set the background image with help of css properties.</p>
+
+    <h3>4. Picture emlement</h3>
+    <p>in html picture element is helpful for image supporting in different screens. so we no.of images to given option for seeing in differenc screen sizes. with help of source,img elements and media, srcset attributes. </p>
+    <picture>
+        <source media="(min-width:165px)" srcset="\media\agri.webp">
+        <source media="(min-width:365px)" srcset="\media\agri.webp">
+        <img src="/media/background.webp" style="width: 600px; height: 300px;">
+    </picture>
+</body>
+</html>

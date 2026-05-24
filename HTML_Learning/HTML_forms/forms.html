@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Form</title>
+</head>
+<body>
+
+  <h1>Student Info</h1>
+  <form action="forms.html" target="_blank" method="post">
+
+    <label for="fullname"> Student fullname: <br></label>
+    <input type="text" id="fullname" name="fname" placeholder="enter your name" required>
+    <br>
+
+    <label for="mname"> Mother name: <br></label>
+    <input type="text" id="mname" name="smname" placeholder="enter your mother name" required>
+    <br>
+    
+    <label for="fname"> Father name: <br></label>
+    <input type="text" id="fname" name="sfname" placeholder="enter your father name" required>
+    <br>
+
+    <label for="mail"> Email: <br></label>
+    <input type="email" id="mail" name="semail" required>
+    <br>
+
+    <label for="ph"> Phone number: <br></label>
+    <input type="tel" id="ph" name="phonenum" value="+91 " maxlength="14" required>
+    <br>
+
+    <label for="10th"> 10th Marks: <br></label>
+    <input type="number" id="10th" name="10thmarks" min="210" max="600" required > <br>
+    <label for="10thc"> 10th CGPA: </label>
+    <input type="number" id="10thc" name="10thcgpa" min="2" max="10" required>
+    <br>
+
+    <label for="12th/dep"> 12th/Deploma Marks: <br></label>
+    <input type="number" id="12th/dep" name="12th/depmarks" min="350" max="1800" required><br>
+    <label for="12th/depc"> 12th/Deploma CGPA: <br></label>
+    <input type="number" id="12th/depc" name="10thcgpa" min="2" max="10"><br>
+    <br>
+
+    <label for="gradu"> Graduation Percentage: <br></label>
+    <input type="number" id="gradu" name="Graduper" min="35" max="100" required>
+    <br><br>
+
+    <label for="co"> Select Course: </label>
+    <select name="course" id="co" >
+      <option value="full stack web development"> Full Stack Web Development </option>
+      <option value="data analist"> Data Analist </option>
+      <option value="data scientist"> Data Scientist </option>
+      <option value="devops"> Devops </option>
+      <option value="ai&ml"> AI&ML </option>
+    </select>
+    <br>
+    <fieldset>
+      <legend> Address: </legend>
+      <textarea name="address" rows="5" cols="30" required></textarea>
+    </fieldset>
+    <br> <br>
+
+    <button type="submit"> Submit </button> 
+    <input type="submit" formaction="forms.html" value="Submit as safe file">
+
+  </form>
+
+</body>
+</html>

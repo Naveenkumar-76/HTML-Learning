@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+</head>
+<body>
+    <h1>HTML images</h1>
+    <p>Basically, we declare image with img tag with the help of src, alt, width, height and style attributes.</p>
+
+    <h3>1. img tag with float attribute</h3>
+    <p><img src="/media/smiley.avif" style="width: 50px; height: 50px; float: right">By using float attribute, we can fix the image right or left.</p>
+
+    <h3>2. An image map is an image with clickable areas.</h3>
+    <p>Generally, we make clickable areas on a image, with help of map, area elements and usemap, name, shape, co-oardinates(points), alt, href attributes. </p>
+    <p>The image and map elements combine by using name and usemap attributes. usemap attribute value starts with '#'.</p>
+
+    <img src="/media/software.webp" alt="software" style="width:400px; height:300px;" usemap="#software">
+    <map name="software">
+        <area shape="poly" coords="170,140,390,140,390,185,170,185" href="https://www.dreamstime.com/stock-photos" alt="Development">
+        <area shape="rect" coords="640,155,820,200" href="https://www.dreamstime.com/stock-photos" alt="Testing">
+        <area shape="rect" coords="100,430,290,475" href="https://www.dreamstime.com/stock-photos" alt="Deployement">
+        <area shape="rect" coords="270,530,430,575" href="https://www.dreamstime.com/stock-photos" alt="Design">
+        <area shape="rect" coords="620,460,840,505" href="https://www.dreamstime.com/stock-photos" alt="requirements">
+        <area shape="poly" coords="490,270, 560,305, 560,375, 490,410, 420,375, 420,305" href="https://www.dreamstime.com/stock-photos" alt="AGILE (Center Hexagon)" target="_blank">
+        <area shape="circle" coords="390,230,22" href="https://www.dreamstime.com/stock-photos" alt="Top Left Circle Node">
+        <area shape="circle" coords="600,230,22" href="https://www.dreamstime.com/stock-photos" alt="Top Right Circle Node">
+    </map>
+    
+    <h1>.......Continues imageCss.html file</h1>
+</body>
+</html>

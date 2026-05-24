@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Student Registration Form </title>
+    </head>
+    <body>
+        <h1> College Student Registration </h1>
+        <p> A college student registration form serves as the official gateway through which students formally enroll in an educational institution, capturing essential personal, academic, and administrative information needed to establish and manage a student's record. It collects details such as the student's name, contact information, date of birth, chosen program or major, course selections, and sometimes financial or emergency contact details, enabling the college to organize class rosters, allocate resources, track academic progress, and ensure compliance with institutional and governmental requirements. Essentially, it acts as the foundational document that connects a student to the college's systems and services, making it possible to coordinate everything from class scheduling and fee payment to library access and student ID issuance. </p>
+        <form action="studentregister.html" target="_blank" method="post" autocomplete="on">
+            <fieldset>
+                <legend><b> Student Details Section: </b></legend>
+
+                <h3> Rules of College: </h3>
+                <ul>
+                    <li>The use, possession, or distribution of drugs and alcohol on college premises is strictly prohibited and will result in immediate expulsion.</li>
+                    <li>Students must maintain respectful and disciplined behavior at all times, and any form of ragging, bullying, or harassment will lead to strict disciplinary action.</li>
+                    <li>Students are required to maintain a minimum attendance percentage (usually 75%) in all subjects to be eligible for examinations.</li>
+                    <li>All tuition and institutional fees must be paid in full before the specified due date, and failure to do so may result in suspension of academic privileges or cancellation of enrollment.</li>
+                    <li>Students must strictly avoid cheating, plagiarism, or any form of dishonesty in assignments and exams, as violations will result in serious academic penalties and etc...</li>
+                </ul>
+                <p>For more information, you can search <a href=https://www.pvkkit.ac.in><b>PVKK IT</b></a></p>
+                
+                <h4>Personal Information: </h4>
+                <label for="sn">Student Full Name: <br></label>
+                <input type="text" name="sname" id="sn" required> 
+                <br>
+                
+                <label for="sem">Student Email: <br></label>
+                <input type="email" name="semail" id="sem" placeholder="naveen@gmail.com" required> 
+                <br>
+
+                <label for="pw">Password: <br></label>
+                <input type="password" name="spass" id="pw" required> 
+                <br>
+
+                <label for="ag">Student Age: <br></label>
+                <input type="number" name="sage" id="ag" min="15" required> 
+                <br>
+                <hr>
+
+                <h4>Course Selection: </h4>
+                <input type="radio" name="course" id="cse" value="CSE">
+                <label for="cse"> CSE </label>
+                <br>
+                <input type="radio" name="course" id="ece" value="ECE">
+                <label for="ece"> ECE </label>
+                <br>
+                <input type="radio" name="course" id="eee" value="EEE">
+                <label for="eee"> EEE </label>
+                <br>
+                <input type="radio" name="course" id="mech" value="MECH">
+                <label for="mech"> MECH </label>
+                <br>
+                <hr>
+
+                <h4>Skills Selection: </h4>
+                <input type="checkbox" name="skills" id="java" value="java">
+                <label for="java"> Java </label>
+                <br>
+                <input type="checkbox" name="skills" id="python" value="python">
+                <label for="python"> Python </label>
+                <br>
+                <input type="checkbox" name="skills" id="html" value="html">
+                <label for="html"> HTML </label>
+                <br>
+                <input type="checkbox" name="skills" id="cs" value="communication skills">
+                <label for="cs"> Communication Skills </label>
+                <br>
+                <hr>
+
+                <h4>Additional Information: </h4>
+                <label for="year">Are you joining: </label>
+                <select id="year" name="Syear" value="1st year" title="are you joining">
+                    <option value="1st year">1st year</option>
+                    <option value="2nd year">2nd year</option>
+                    <option value="3rd year">3rd year</option>
+                    <option value="4th year">4th year</option>
+                </select>
+                <br><br>
+                <label for="txt"> Why do you want this course? </label> <br>
+                <textarea id="txt" name="why_course" cols="30" rows="5"> To gaining knowledge, </textarea>
+                <hr>
+
+                <h4>Feedback Section: </h4>
+                <input type="radio" name="fd" id="ex" value="excellent">
+                <label for="ex"> Excellent </label><br>
+                <input type="radio" name="fd" id="gd" value="good">
+                <label for="gd"> Good </label><br>
+                <input type="radio" name="fd" id="avg" value="average">
+                <label for="avg"> Average </label><br>
+                <input type="radio" name="fd" id="pr" value="poor">
+                <label for="pr"> Poor </label><br>
+                <br>
+
+                <button type="submit" value="button"> Submit </button>
+                <button type="reset" value="button"> Reset </button>
+
+            </fieldset>
+        </form>
+    </body>
+</html>

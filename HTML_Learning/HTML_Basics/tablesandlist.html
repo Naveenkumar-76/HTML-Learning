@@ -1,0 +1,112 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tablesandtables</title>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+            text-align: center;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Tables</h1>
+    <h3>1.HTML elements using in tables</h3>
+    <p>The html table create with help of table, thead, tbody, tfoot, th, tr, td elements. and for table caption we use caption, for grouping columns we use colgroup elements. for one same value 3 or more rows we use rowspan attribute and for columns colspan. </p>
+
+    <table style="width: 100%;">
+        <tead>
+            <caption>Student Details: </caption>
+            <tr>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Branch</th>
+                <th>Year</th>
+                <th>paid Fee</th>
+            </tr>
+        </tead>
+        <tbody>
+            <tr>
+                <td>Venkat</td>
+                <td rowspan="4">B-tech</td>
+                <td rowspan="2">CSE</td>
+                <td rowspan="2">4th year</td>
+                <td rowspan="3">35000</td>
+            </tr>
+             <tr>
+                <td>Bharath</td>
+            </tr>
+             <tr>
+                <td>Tariq</td>
+                <td>ECE</td>
+                <td>3rd year</td>
+            </tr>
+             <tr>
+                <td>Shiva</td>
+                <td>EEE</td>
+                <td>4th year</td>
+                <td>25000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4">Total</th>
+                <td>130000</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h1>HTML Lists</h1>
+    <h3>2. Lists & Css, html elements and attributes used in tables</h3>
+    <p>The html lists are helpful for listing items in orderwise or markedwise to visible in a webpage.</p>
+
+    <p>Lists are 3 types: </p>
+    <ol>
+        <li>Oreded/Numbered List</li>
+        <li>Unoredered/Bulleted List</li>
+        <li>Description List</li>
+    </ol>
+    
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>tables</title>
+    <link rel="stylesheet" href="tables.css">
+    </head>
+  <body>
+      <table>
+        <tr>
+          <th colspan="2">Name</th>
+          <th rowspan="2">Age</th>
+          <th rowspan="2">Qualification</th>
+        </tr>
+        <tr>
+          <th>First Name </th>
+          <th>Last Name </th>
+        </tr>
+        <tr>
+          <td>Venkant</td>
+          <td>chinna raggari</td>
+          <td>21</td>
+          <td rowspan="3">b.tech</td>
+        </tr>
+        <tr>
+          <td>Bharath</td>
+          <td>Dasari</td>
+          <td>23</td>
+
+        </tr>
+        <tr>
+          <td>Naveenkumar</td>
+          <td>Narasimhappagari</td>
+          <td>21</td>
+
+        </tr>
+      </table>
+  </body>
+</html>
