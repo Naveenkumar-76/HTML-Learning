@@ -1,0 +1,77 @@
+<!-- 🧩 CHALLENGE 2: College Timetable Page
+🎯 Objective
+
+Practice tables and content structuring.
+
+🧱 Requirements
+1️⃣ Page Structure
+Title: College Timetable
+2️⃣ Heading
+Main heading: Weekly Class Schedule
+3️⃣ Table
+
+Create a table with:
+
+Days (Monday–Friday)
+Subjects
+Time slots
+
+Use:
+
+<table>
+<tr>, <th>, <td>
+Table caption
+
+📌 HTML topics tested:
+tables, headings, captions -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Timetable</title>
+</head>
+<body>
+
+    <h1>Weekly Class Schedule</h1>
+
+    <table border="i">
+        <caption>Tap Academy Class Timings</caption>
+        <thead>
+            <tr>
+                <th>Time/Day</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>10:00 - 11:30</th>
+                <td colspan="3">programming</td>
+                <td colspan="2">HTML</td>
+            </tr>
+            <tr>
+                <th>11:30 - 12:00</th>
+                <td colspan="5">Break</td>
+            </tr>
+            <tr>
+                <th>12:00 - 1:30</th>
+                <td colspan="3">Java</td>
+                <td colspan="2">CSS</td>
+            </tr>
+        </tbody>
+
+       <tfoot>
+            <tr>
+                <th>Note:</th>
+                <td colspan="5">Saturday & Sunday is Holiday.</td>
+            </tr>
+       </tfoot>
+    </table>
+    
+</body>
+</html>
