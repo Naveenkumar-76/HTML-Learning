@@ -1,0 +1,88 @@
+<!-- 
+🧩 CHALLENGE 4: Simple Website Navigation Page
+🎯 Objective
+
+Understand links, sections, and page navigation.
+
+🧱 Requirements
+1️⃣ Headings
+Main heading: My Learning Website
+2️⃣ Navigation Links
+
+Add links using <a>:
+
+Home
+About
+Courses
+Contact
+
+(Links can point to # or section IDs)
+
+3️⃣ Sections
+
+Create sections using:
+
+<div> or semantic tags
+Each section must have a heading and paragraph
+
+📌 HTML topics tested:
+links, id, div, navigation, page structure -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website Navigation</title>
+    </head>
+<body>
+
+    <h1>My Learning Website</h1>
+
+    <nav>
+        <a href="#home">Home</a> &nbsp;
+        <a href="#about">About</a> &nbsp;
+        <a href="#courses">Courses</a> &nbsp;
+        <a href="#contact">Contact</a> &nbsp;
+    </nav>
+
+    <main id="home">
+        <h2>Welcome to Tap Academy</h2>
+        <p>Tap Academy is a leading skill development center dedicated to transforming 
+            students and freshers into industry-ready professionals. We believe that 
+            quality education and practical training should be accessible to everyone, 
+            regardless of their background. Our mission is simple — to bridge the gap 
+            between academics and the real world of technology. We are proud to have 
+            helped hundreds of students build successful careers in the tech industry.</p>
+    </main>
+
+    <section id="about">
+        <h2>Why Choose Us</h2>
+        <p>We stand out because we don't just teach — we train, guide, and place our students 
+            in top companies. Our experienced trainers bring real industry knowledge into every 
+            session, making learning engaging and effective. We provide flexible batch timings, 
+            affordable fees, and dedicated placement support to every student. At Tap Academy, 
+            your success is our greatest achievement.</p>
+    </section>
+
+    <article id="courses">
+        <h2>Courses We Offer</h2>
+        <p>At Tap Academy, we offer a wide range of job-oriented courses designed to meet 
+            the demands of today's tech industry. Our programs include Full Stack Web 
+            Development, Python, Java, Data Science, Digital Marketing, and much more. 
+            Each course is crafted with hands-on projects, real-time training, and expert
+            mentorship to ensure you gain practical knowledge. Whether you are a beginner 
+            or a graduate looking to upskill, we have the right course for you.</p>
+    </article>
+
+    <footer id="contact">
+        <h3>Contact Us:</h3>
+        <address>
+            Phone: <code>7671062285</code><br>
+            Email: <a href="mailto:thetapacademy@gmail.com">thetapacademy@gmail.com</a><br>
+            Website: thetapacademy.com<br>
+            Instagram: tapacademy.online
+        </address>
+    </footer>
+
+</body>
+</html>
