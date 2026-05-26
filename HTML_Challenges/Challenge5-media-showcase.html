@@ -1,0 +1,96 @@
+<!-- 🧩 CHALLENGE 5: Media Showcase Page
+🎯 Objective
+
+Practice images, audio, video, and iframe.
+
+🧱 Requirements
+1️⃣ Image Section
+Add at least 2 images with alt text
+2️⃣ Audio Section
+Add one audio file (controls enabled)
+3️⃣ Video Section
+Add one video (controls enabled)
+4️⃣ Iframe
+Embed a YouTube video or Google Map using <iframe>
+
+📌 HTML topics tested:
+img, audio, video, iframe, attributes -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Media Showcase</title>
+    </head>
+    <body>
+
+        <header>
+            <h1>Life of Villagers is Beautiful</h1>
+        </header>
+
+        <main>
+            <h2>In villages:</h2>
+            <p>Life in a village is truly one of the most beautiful and peaceful experiences 
+                one can ever have. The fresh air, green fields, flowing rivers, and the sound 
+                of birds in the morning make every day feel like a blessing. People in 
+                villages live simply, but their hearts are full of warmth, love, and 
+                togetherness — neighbors know each other by name, and everyone shares both 
+                joy and sorrow as one big family. The farmers wake up early, work hard in 
+                the fields, and return home with a smile, finding happiness in the little 
+                things that city life often forgets. Away from the noise, traffic, and stress 
+                of urban living, village life teaches you the true meaning of peace, gratitude, 
+                and human connection. No matter how far people go in life, the village always 
+                remains close to the heart, because that is where life is real, raw, and 
+                beautifully simple.</p>
+        </main>
+
+        <div class="media">
+            <figure>
+                <img src="/media/agri.webp" alt="agricultural photo" width="515px" height="300px">
+                <figcaption>fig1: nature with birds</figcaption>
+            </figure>
+
+            <audio width="200" height="300" controls>
+                <source src="/media/Birds-audio.mp3" type="audio/mpeg">
+            </audio>
+
+            <figure>
+                <img src="/media/agribackground.webp" alt="field photo" width="515px" height="300px">
+                <figcaption>fig2: field work</figcaption>
+            </figure>
+
+
+            <p>Fieldwork in villages is a beautiful sight that tells the story of hard work, dedication, 
+                and love for the land. Farmers wake up before sunrise, grab their tools, and head out 
+                to the fields with great energy and commitment, working tirelessly through the heat and 
+                rain without any complaints. The sight of green crops swaying in the wind, the smell of 
+                fresh mud after rain, and the sound of farmers singing while they work makes the whole 
+                experience truly heartwarming. Every seed they sow and every drop of sweat they shed 
+                carries the hope of a good harvest and a better life for their family. </p>
+
+            <video width="500" height="250" controls>
+                <source src="/media/village-video.mp4" type="video/mp4">
+            </video>
+
+        </div>
+
+        <article class="kolleru">
+            <h2>Kolleru Lake — A Natural Wonder of Andhra Pradesh</h2>
+            <p>Kolleru Lake is one of the largest freshwater lakes in India, located in the West Godavari 
+                and Krishna districts of Andhra Pradesh. It is home to a wide variety of migratory birds, 
+                rare wildlife, and rich aquatic life, making it one of the most important wetland ecosystems 
+                in the country. The lake was declared a Wildlife Sanctuary in 1999 and is also recognized as 
+                a Ramsar Wetland of International Importance. Surrounded by lush greenery and scenic beauty, 
+                Kolleru Lake is a true treasure of Andhra Pradesh that reflects the incredible richness of 
+                nature.</p>
+            <iframe width="560"
+                    height="315" 
+                    src="https://www.youtube.com/embed/5KUbScG_drs?" 
+                    title="YouTube video player" >
+            </iframe>
+        </article>
+
+        <footer>See the above video to explore the breathtaking beauty of Kolleru Lake yourself!</footer>
+
+    </body>
+</html>
