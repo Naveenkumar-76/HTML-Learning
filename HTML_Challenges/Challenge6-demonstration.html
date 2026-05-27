@@ -1,0 +1,60 @@
+<!-- 🧩 CHALLENGE 6: HTML Elements Demonstration Page
+🎯 Objective
+
+Demonstrate understanding of inline and block elements.
+
+🧱 Requirements
+1️⃣ Text Formatting
+
+Use:
+
+<b>, <strong>
+<i>, <em>
+<mark>, <small>, <del>
+2️⃣ Inline vs Block
+
+Show examples using:
+
+<span> (inline)
+<div> (block)
+
+Explain differences using paragraphs.
+
+📌 HTML topics tested:
+formatting, span, div, inline & block -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Demonstration Page</title>
+    </head>
+    <body>
+        <h1>The Mystery of the Deep Ocean</h1>
+        <!-- Formatting styles  -->
+        <p>The deep ocean remains one of the least explored <em>frontiers</em> on Earth, hiding secrets 
+            that <i>scientists</i> are only beginning to uncover. Covering more than <del>65</del> <ins>70</ins> percent of 
+            our planet's surface, the ocean descends to depths of nearly 11 <mark>kilometers</mark> in places 
+            like the <strong>Mariana Trench</strong>, where crushing pressure, freezing temperatures, and total 
+            darkness create conditions hostile to any form of life. Yet remarkably, creatures 
+            like the <b>anglerfish</b> and giant tube worms not only survive but thrive in these extreme 
+            conditions, completely changing our understanding of where life can exist. Every <small>new</small> 
+            expedition brings startling discoveries, and understanding the deep ocean is not just 
+            a matter of curiosity, but a genuine necessity for the survival of life on Earth.</p>
+        <p>H<sub>2</sub>o is very powerful and formula of equal triangle is <code>t = s<sup>2</sup> + s<sup>2</sup> 
+            + s<sup>2</sup></code></p>
+
+        <!-- inline and blockline elements -->
+         <div>
+            <!-- by using span element -->
+            <p>The deep ocean remains one of the least explored frontiers on Earth, hiding secrets that scientists 
+                are only beginning to uncover. 
+            <span>Covering more than 70 percent of our planet's surface.</span></p>
+                <!-- Same paragraph by using div element -->
+            <p>The deep ocean remains one of the least explored frontiers on Earth, hiding secrets that scientists 
+                are only beginning to uncover.</p>
+            <div>Covering more than 70 percent of our planet's surface.</div>
+         </div>
+    </body>
+</html>
