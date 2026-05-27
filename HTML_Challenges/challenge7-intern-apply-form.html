@@ -1,0 +1,179 @@
+<!-- 🧩 Challeng7: PROJECT REQUIREMENTS
+1️⃣ Page Structure
+Proper HTML boilerplate
+<title>: Internship Application Form
+2️⃣ Headings & Introduction
+<h1>: Online Internship Application
+One paragraph explaining the internship purpose
+3️⃣ Instructions Section (HTML Only)
+
+Add an unordered list with at least 5 rules, such as:
+
+All fields are mandatory
+Use a valid email
+Upload resume in PDF
+One submission only
+Correct phone number required
+4️⃣ Applicant Personal Information
+
+Inside a <form>:
+
+Full Name → text
+required
+maxlength="40"
+Email → email
+required
+placeholder
+Phone Number → tel
+required
+pattern (10 digits only)
+Date of Birth → date
+required
+5️⃣ Education Details
+Highest Qualification → dropdown (select)
+Diploma
+B.Tech
+M.Tech
+MCA
+Specialization → text
+required
+6️⃣ Internship Preferences
+Internship Domain → radio buttons
+Web Development
+Java Development
+Python Development
+Data Analysis
+Skills Known → checkboxes
+HTML
+Java
+Python
+Communication
+7️⃣ Resume Upload
+File input
+Accept PDF only
+required
+8️⃣ Why Should We Select You?
+<textarea>
+rows and cols
+maxlength="300"
+Placeholder text
+9️⃣ Declaration (IMPORTANT)
+
+Checkbox:
+
+“I hereby declare that the information provided is true.”
+
+(Must be checked before submission)
+
+🔟 Buttons
+Submit button
+Reset button -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Internship Application Form</title>
+    </head>
+    <body>
+        <h1>Online Internship Application</h1>
+        <p>An online internship serves as a virtual professional training opportunity that allows students or fresh graduates to gain real-world work experience, develop industry-relevant skills, and build their professional network from the comfort of their own location, without the need for physical presence at a workplace. It bridges the gap between academic learning and professional practice by exposing interns to actual business tasks, projects, and workflows in their chosen field, helping them apply theoretical knowledge to practical situations. Additionally, online internships provide organizations with access to a wider talent pool from different geographical regions, while giving interns the advantage of flexible working hours, reduced commuting costs, and the chance to enhance their digital communication and remote collaboration skills, which are increasingly valuable in today's technology-driven work environment.</p>
+        <form action="https://httpbin.org/post" target="_blank" method="post">
+            <fieldset>
+                <legend>Application Form: </legend>
+
+                <h4>Instructions: </h4>
+                <ul>
+                    <li>All fields are mandatory</li>
+                    <li>Use a valid email</li>
+                    <li>Upload resume in PDF</li>
+                    <li>One submission only</li>
+                    <li>Correct phone number required</li>
+                </ul>
+                <hr>
+
+                <h4>Personal Information: </h4>
+                <label for="sn">Student Full Name: </label> <br>
+                <input type="text" id="sn" name="sname" maxlength="40" required>
+                <br>
+
+                <label for="semail">Email: </label><br>
+                <input type="email" id="semail" name="email" placeholder="naveen@gmail.com" required> 
+                <br>
+                
+                <label for="phone">Phone Number: </label><br>
+                <input type="tel" id="phone" name="sphone" pattern="[0-9]{10}" title="enter ten digits only" required>
+                <br>
+
+                <label for="dob">Date of Birth: </label><br>
+                <input type="date" id="dob" name="sdob" required>
+                <br>
+                <hr>
+
+                <h4>Educational Details: </h4>
+                <label for="details">Higher Qualification: </label> 
+                <select id="details" name="edetails" value="B.tech">
+                    <option value="diploma">Diploma</option>
+                    <option value="b.tech" selected>B.Tech</option>
+                    <option value="m.tech">M.Tech</option>
+                    <option value="mca">MCA</option>
+                </select>
+                <br>
+                <label for="spec">Specialization: </label>
+                <input type="text" name="specialization" id="spec" size="35" required>
+                <br>
+                <hr>
+
+                <h4>Internship Preferences: </h4>
+                <p>Choose your course : </p>
+                <input type="radio" name="course" id="web" value="web development">
+                <label for="web">Web Development</label> 
+                <br>
+
+                <input type="radio" name="course" id="java" value="java development">
+                <label for="java">Java Development</label> 
+                <br>
+
+                <input type="radio" name="course" id="python" value="python development">
+                <label for="python">Python Development</label> 
+                <br>
+
+                <input type="radio" name="course" id="data" value="data analysis">
+                <label for="data">Data Analysis</label> 
+                <br>
+
+                <p>Do you know the skills: </p>
+                <input type="checkbox" name="skills" id="j" value="java">
+                <label for="j">Java</label> 
+                <br>
+
+                <input type="checkbox" name="skills" id="py" value="python">
+                <label for="py">Python</label> 
+                <br>
+
+                <input type="checkbox" name="skills" id="html" value="html">
+                <label for="html">HTML</label> 
+                <br>
+
+                <input type="checkbox" name="skills" id="cs" value="Communication">
+                <label for="cs">Communication</label> 
+                <br>
+
+                <p><b>Upload your Resume(pdf only): </b>
+                <input type="file" name="resume" accept="application/pdf" required></p>
+                <br>
+                <hr>
+
+                <p><b>Why should we select you???</b></p>
+                <textarea name="select" maxlength="300" rows="10" cols="55" placeholder="text"></textarea>
+
+                <input type="checkbox" name="declaration" id="declare" required>
+                <label for="declare">“I hereby declare that the information provided is true.”</label>
+                <br>
+                <br>
+
+                <input type="submit" value="submit">
+                <input type="reset" value="reset">
+
+            </fieldset>
+        </form>
+    </body>
+</html>
